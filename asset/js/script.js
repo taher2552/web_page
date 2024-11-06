@@ -27,4 +27,10 @@ $(document).ready(function () {
         $navLinks.removeClass('active');
         $('body').removeClass('menu-open');
     });
+    
 });
+
+function displayFileName(input, displayId) {
+    var fileName = input.files[0] ? input.files[0].name : 'No file chosen';
+    $('#' + displayId).text(fileName);
+}
