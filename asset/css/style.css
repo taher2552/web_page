@@ -576,6 +576,7 @@ h2 {
     font-size: 14px;
     transition: background-color 0.3s;
     user-select: none;
+    height: 2.25rem;
 }
 .execute-btn:hover {
     background-color: #0661c3;
