@@ -33,4 +33,24 @@ $(document).ready(function () {
 function displayFileName(input, displayId) {
     var fileName = input.files[0] ? input.files[0].name : 'No file chosen';
     $('#' + displayId).text(fileName);
+    
+    var statusId = 'status' + displayId.match(/\d+/)[0];
+    
+    // Show "Execute" button in the status column
+    $('#' + statusId).html('<button class="execute-btn" onclick="executeProcess(\'' + statusId + '\')">Execute</button>');
 }
+
+function executeProcess(statusId) {
+    var button = $('#' + statusId).find('.execute-btn');
+    
+    button.prop('disabled', true).text('Processing...');
+    
+    setTimeout(function() {
+        $('#' + statusId).html(
+            '<span class="processed-text">Processed</span>' +
+            '<span class="calculation-card">(Calculation Card - Benefits and Pensions)</span>'
+        );
+    }, 2000); 
+}
+
+

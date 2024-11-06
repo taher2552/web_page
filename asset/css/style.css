@@ -459,7 +459,7 @@ h2 {
 
 .upload-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr 2fr;
     gap: 15px;
     margin: 20px 40px;
     padding: 20px;
@@ -472,7 +472,6 @@ h2 {
 .upload-container div {
     padding: 10px;
     display: flex;
-    align-items: center;
     justify-content: start;
     font-size: 1em;
 }
@@ -486,7 +485,7 @@ h2 {
     padding: 12px;
 }
 
-.name-column, .status-column {
+.name-column{
     color: #5a5a5a;
     text-align: left;
 }
@@ -501,6 +500,7 @@ h2 {
     font-size: 0.9em;
     transition: background-color 0.3s;
     user-select: none;
+    height: 2.25rem;
 }
 
 .custom-file-upload:hover {
@@ -512,10 +512,9 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    opacity: 0;
+    display: none;
     width: 100%;
     height: 100%;
-    z-index: 1000;
 }
 
 .file-name {
@@ -538,6 +537,59 @@ h2 {
         text-align: left;
         padding-left: 15px;
     }
+}
+
+/* Existing styles remain the same */
+
+.status-column {
+    color: #5a5a5a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap: 8px;
+}
+
+/* Updated calculation card styling */
+.calculation-card {
+    display: block;
+    color: grey;
+    font-size: 12px;
+}
+
+/* Style for the processed text */
+.status-column .processed-text {
+    display: block;
+    margin-bottom: 4px;
+    color: #28a745;
+}
+
+/* Execute button styling */
+.execute-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    user-select: none;
+}
+.execute-btn:hover {
+    background-color: #0661c3;
+}
+
+
+
+.execute-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+input, label, button{
+    cursor: pointer;
 }
 
 
