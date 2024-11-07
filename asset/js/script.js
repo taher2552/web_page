@@ -43,6 +43,12 @@ $(document).ready(function () {
           window.location.href = 'main_page.html';
         }
       });
+
+      $('.previous_btn').on('click', function () {
+        if (!$(this).prop('disabled')) {
+          window.location.href = 'index.html';
+        }
+      });
     
 });
 
