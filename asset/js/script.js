@@ -27,6 +27,22 @@ $(document).ready(function () {
         $navLinks.removeClass('active');
         $('body').removeClass('menu-open');
     });
+
+    $('.box').on('click', function () {
+        $('.box').removeClass('selected');
+    
+        // Add 'selected' class to the clicked box
+        $(this).addClass('selected');
+    
+        // Enable the 'Next' button
+        $('#next-button').prop('disabled', false);
+      });
+
+      $('#next-button').on('click', function () {
+        if (!$(this).prop('disabled')) {
+          window.location.href = 'main_page.html';
+        }
+      });
     
 });
 

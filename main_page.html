@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="navbar">
+            <div class="logo">Sera Neon</div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+
+        <div class="header-content">
+            <h1>Oracle Cloud DM Advisory</h1>
+            <p>High Performance Oracle Cloud DM Teams</p>
+            <div class="btn-container">
+                <button class="btn btn-primary">Contact Us!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="upload-container">
+        <h2>Payroll</h2> 
+    
+        
+        <div class="header name-column">Name</div>
+        <div class="header file-column">Input File</div>
+        <div class="header file-name-column">Output File</div>
+        <div class="header file-column">HDL Status</div>
+    
+        
+        <div class="name-column">Payroll Relationship</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName1')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName1">No file chosen</div>
+        <div class="status-column status" id="status1"></div>
+    
+        
+        <div class="name-column">Salary</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName2')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName2">No file chosen</div>
+        <div class="status-column status" id="status2"></div>
+    
+        <div class="name-column">Element Entry</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName3')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName3">No file chosen</div>
+        <div class="status-column status" id="status3"></div>
+    
+        <div class="name-column">Statutory Deduction</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName4')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName4">No file chosen</div>
+        <div class="status-column status" id="status4"></div>
+    
+        <div class="name-column">Benefits and Pension</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName5')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName5">No file chosen</div>
+        <div class="status-column status" id="status5"></div>
+    
+        <div class="name-column">Pension Auto Enrolment</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName6')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName6">No file chosen</div>
+        <div class="status-column status" id="status6"></div>
+    
+        <div class="name-column">Student Loan</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName7')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName7">No file chosen</div>
+        <div class="status-column status" id="status7"></div>
+    
+        <div class="name-column">Post Graduate Loan</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName8')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName8">No file chosen</div>
+        <div class="status-column status" id="status8"></div>
+    
+        <div class="name-column">Balance Initialisation</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName9')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName9">No file chosen</div>
+        <div class="status-column status" id="status9"></div>
+    </div>
+
+
+    <div class="upload-container">
+        <h2>Core HR</h2> 
+    
+        
+        <div class="header name-column">Name</div>
+        <div class="header file-column">Input File</div>
+        <div class="header file-name-column">Output File</div>
+        <div class="header file-column">HDL Status</div>
+    
+        
+        <div class="name-column">Employee</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName10')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName10">No file chosen</div>
+        <div class="status-column status" id="status10"></div>
+    
+        
+        <div class="name-column">Person Email</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName11')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName11">No file chosen</div>
+        <div class="status-column status" id="status11"></div>
+    
+        <div class="name-column">Document of Records
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName12')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName12">No file chosen</div>
+        <div class="status-column status" id="status12"></div>
+
+        <div class="name-column">Address
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName16')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName16">No file chosen</div>
+        <div class="status-column status" id="status16"></div>
+
+        <div class="name-column">Phone Number
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName17')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName17">No file chosen</div>
+        <div class="status-column status" id="status17"></div>
+
+        <div class="name-column">Ethnicity
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName18')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName18">No file chosen</div>
+        <div class="status-column status" id="status18"></div>
+
+        <div class="name-column">Religion
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName19')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName19">No file chosen</div>
+        <div class="status-column status" id="status19"></div>
+
+        <div class="name-column">Work Measure
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName20')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName20">No file chosen</div>
+        <div class="status-column status" id="status20"></div>
+    </div>
+
+    <div class="upload-container">
+        <h2>AP</h2>
+    
+        
+        <div class="header name-column">Name</div>
+        <div class="header file-column">Input File</div>
+        <div class="header file-name-column">Output File</div>
+        <div class="header file-column">HDL Status</div>
+
+        <div class="name-column">Auto Invoice Import
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName15')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName15">No file chosen</div>
+        <div class="status-column status" id="status15"></div>
+
+        <div class="name-column">Credit Management Data Points Import
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName21')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName21">No file chosen</div>
+        <div class="status-column status" id="status21"></div>
+
+        <div class="name-column">Receivables Standard Receipt Import
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName22')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName22">No file chosen</div>
+        <div class="status-column status" id="status22"></div>
+
+        <div class="name-column">Upload Customers
+        </div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName23')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName23">No file chosen</div>
+        <div class="status-column status" id="status23"></div>
+    </div>
+
+    <div class="upload-container">
+        <h2>AR</h2>
+    
+        
+        <div class="header name-column">Name</div>
+        <div class="header file-column">Input File</div>
+        <div class="header file-name-column">Output File</div>
+        <div class="header file-column">HDL Status</div>
+
+        <div class="name-column">Details</div>
+        <div class="file-column">
+            <label class="custom-file-upload">
+                Choose File
+                <input type="file" class="file-input" onchange="displayFileName(this, 'fileName30')">
+            </label>
+        </div>
+        <div class="file-name-column file-name" id="fileName30">No file chosen</div>
+        <div class="status-column status" id="status30"></div>
+    </div>
+
+    <script src="asset/js/script.js"></script>
+</body>
+
+</html>
